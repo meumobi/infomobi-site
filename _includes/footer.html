@@ -1,38 +1,37 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+<!-- Footer -->
+<div class="footer footer--dark">
+  <div class="container">
+    <div class="footer__inner">
+      <a href="index.html" class="footer__textLogo">Evie theme</a>
+      <div class="footer__data">
+        <div class="footer__data__item">
+          <div class="footer__row">
+            Contact us <a href="mailto:{{ site.email }}" target="_blank" class="footer__link">{{ site.email }}</a> 
+          </div>
+          <div class="footer__row">
+          Code/design by <a href="https://twitter.com/anges244" target="_blank" class="footer__link">Aggelos Gesoulis</a>
+          </div>
+        </div>
+        <div class="footer__data__item">
+          <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
+          </div>
+          <div class="footer__row">Special thx to <a href="https://shareboost.co" target="_blank" class="footer__link">ShareBoost</a> for the support
+          </div>
+        </div>
+        <div class="footer__data__item">
+        <div class="footer__row">
+          <a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+        </div>
+        <div class="footer__row">
+          <a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+        </div>
+        <div class="footer__row">
+          <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+        </div>
+        <div class="footer__row">
+          <a href="./additional.html" class="footer__link">MIT license</a>
+        </div>
       </div>
     </div>
-
   </div>
-
-</footer>
+</div>
