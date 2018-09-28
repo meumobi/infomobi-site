@@ -1,0 +1,36 @@
+---
+layout: page
+---
+<!-- Authentication pages -->
+<div class="auth">
+	<div class="container">
+		<div class="auth__inner">
+			<div class="auth__media">
+				<img src="./images/undraw_business_deal_cpi9.svg">
+			</div>
+			<div class="auth__auth">
+				<h1 class="auth__title">Get Started Free</h1>
+				<p>Send us an email to <a href="mailto:{{ site.email }}" class="link">{{ site.email }}</a> or fill out form below, we'll respond very soon.</p>
+				<form method='post' action="https://formspree.io/{{ site.email }}" role="presentation" class="form">
+					<div class="double">
+						<div class="half">
+							 <label for="first">First Name</label>
+							 <input type="text" name="firstname" id="firstname" placeholder="John">
+						</div>
+						<div class="half">
+							<label for="second">Last Name</label>
+							<input type="text" name="lastname" id="lastname" placeholder="Smith">
+						</div>
+					</div>
+					<label>Email</label>
+					<input type="email" name="_replyto" id='email' placeholder="you@example.com">
+					<label>Phone (only use if no response in 7-days, could occur because of spam filter)</label>
+					<input type="text" name="phone" id='phone' placeholder="+55 21 8348 7230" autocomplete="off">
+					<label for='textarea'>Message</label>
+					<textarea placeholder="drop a message about your company" name="message" id='textarea'></textarea>
+					<button type='submit' class="button button__accent">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
