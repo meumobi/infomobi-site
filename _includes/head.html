@@ -7,4 +7,9 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="icon" type="image/png" href="assets/images/ic_launcher.png">
+  {% if site.hubspot_id%}
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/{{ site.hubspot_id }}.js"></script>
+  <!-- End of HubSpot Embed Code -->
+  {% endif %}
 </head>

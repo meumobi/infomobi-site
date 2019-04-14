@@ -16,6 +16,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://infomobi.app" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+hubspot_id: 5279532
 
 # Build settings
 markdown: kramdown
